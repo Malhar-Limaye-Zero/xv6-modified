@@ -1,3 +1,5 @@
+ORIGINAL README
+_______________________________________________________________________________________________________________________________________________________________________
 NOTE: we have stopped maintaining the x86 version of xv6, and switched
 our efforts to the RISC-V version
 (https://github.com/mit-pdos/xv6-riscv.git)
@@ -49,3 +51,12 @@ will need to install a cross-compiler gcc suite capable of producing
 x86 ELF binaries (see https://pdos.csail.mit.edu/6.828/).
 Then run "make TOOLPREFIX=i386-jos-elf-". Now install the QEMU PC
 simulator and run "make qemu".
+
+________________________________________________________________________________________________________________________________________________________________________
+
+MY MODIFICATIONS
+1. System Call to display info about sibling processes
+2. System Call to find the parent of a process
+3. Updated parent inheritance for orphan processes
+4. System Calls to count virtual and physical pages of memory in user address space
+5. Altered Page allocation policy to lazy allocation
